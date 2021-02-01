@@ -1,0 +1,44 @@
+@charset "utf-8";
+.body{
+	padding: 10px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";	
+}
+a:link{
+	color: black;
+	font-weight: bold;
+}
+a:visited{
+	color: black;
+	font-weight: bold;
+}
+.container{
+	padding: 1px;
+	
+}
+.metadata{
+	font-size: 20px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	padding: 5px;
+	width: 50%;
+	height: auto;
+	display: inline-block;
+}
+.payload{
+	color: black;
+	border-radius: 0.4rem; 
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	padding: 5px;
+	background-color: lightgray;
+	width: 40%;
+	height: auto;
+	display: inline-block;
+}
+.btn{
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	background-color:dodgerblue;
+	border: none;
+	width: 50%;
+	border-radius: 0.4rem;
+	padding: 5px;
+	font-size: 20px;
+}
