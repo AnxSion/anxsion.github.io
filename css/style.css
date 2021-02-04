@@ -201,15 +201,10 @@ nav #menu li a{
 }
 #media ul li{
 	display: inline-block;
+        text-align: left;
+        
 }
 #media ul li a{
-	text-decoration: none;
-	color: white;
-}
-#studio ul li{
-	display: inline-block;
-}
-#studio ul li a{
 	text-decoration: none;
 	color: white;
 }
@@ -233,7 +228,7 @@ nav #menu li a{
 }
 @media (max-width:768px)
 {
-	#address, #media, #studio{
+	#address, #media{
 		text-align: center;		
 	}
 	.info{
