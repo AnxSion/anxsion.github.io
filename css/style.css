@@ -1,44 +1,246 @@
-@charset "utf-8";
 .body{
-	padding: 10px;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";	
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	background-color:#1A1A1A;
+	color: white;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 }
-a:link{
-	color: black;
+
+nav{
+	background: #1A1A1A;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	z-index: 1;
+}
+nav #brand{
+	float: left;
+	display: block;
+	margin-left: 82px;
+	line-height: 80px;
 	font-weight: bold;
 }
-a:visited{
-	color: black;
-	font-weight: bold;
-}
-.container{
-	padding: 1px;
+
+nav #brand a{
+	color: white;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
 	
 }
-.metadata{
-	font-size: 20px;
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-	padding: 5px;
-	width: 50%;
-	height: auto;
+
+nav #menu{
+	float: left;
+	right: 80px;
+	position: fixed;
+}
+
+nav #menu li{
+	padding-left: 40px;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: 300;
+	line-height: 80px;
+	position: relative;
+	transition: all 0.5s ease-out;
+}
+
+nav #menu li span{
+	font-weight: 700;
+}
+
+nav #menu li a{
+	color: white;
+	text-decoration: none;
+}
+
+#toggle {
+	position: absolute;
+	right: 30px;
+	top:20px;
+	font-weight: 300;
+	z-index: 2;
+	width: 30px;
+	height: 30px;
+	cursor:pointer;
+	float: right;
+	transition: all 0.5s ease-out;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.close{
+	position: absolute;
+	right: 16px;
+	font-weight: 300;
+	z-index: 2;
+	top: -2px;
+	line-height: 80px;
+}
+
+#resize{
+	background: #1A1A1A;
+	z-index: 1;
+	top: 0px;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-out;
+}
+
+#resize #menu{
+	height: 90px;
+	position: absolute;
+	left: 45%;
+	transform: translateX(-40%);
+	text-align: center;
+	display: table-cell;
+	vertical-align:center;
+}
+
+#resize #menu li{
+	display:block;
+	text-align:center;
+	padding: 10px 0;
+	font-size: 50px;
+	min-height: 50px;
+	font-weight: bold;
+	transition: all 0.5s ease-out;
+}
+
+#resize #menu li a{
+	color: white;
+	text-decoration: none;
+}
+
+#resize.active{
+	visibility: visible;
+	opacity: 1;
+}
+#toggle.active{
+	visibility: hidden;
+	opacity: 1;
+}
+
+@media (max-width:768px){
+	#toggle{
+		visibility: visible;
+		opacity: 1;
+		margin-top: 6px;
+		margin-right: 4px;
+	}
+	nav #brand{
+		margin-left: 24px;
+	}
+	
+	#menu a{
+		font-size: 20px;
+		font-weight: 300;
+	}
+	
+	#resize li span{
+		font-weight: bolder;
+	}
+	
+	nav #menu{
+		display: none;
+	}
+}
+
+@media (min-width:768px){
+	#resize{
+		visibility: hidden !important;
+	}
+}
+
+	
+.footer{
+	width: 100%;
+	position:fixed;
+	display: block;
+	bottom: 0px;
+}
+
+.info{
+	margin-left: 2%;
+	margin-right: 2%;
+	
+}
+.hr{
+	background: rgba(255,255,255,0.2);
+	height: 3px;
+	margin-left: 4%;
+	margin-right: 4%;
+	
+}
+.info h4 {
+	font-size: 16px;
+	font-weight: lighter;
+}
+.info p{
+	font-size: 16px;
+	color: white;
+	font-weight: lighter;
+}
+
+.info li{
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+
+#media ul{
+	list-style: none;
+}
+
+#studio ul{
+	list-style: none;
+}
+#media ul li{
 	display: inline-block;
 }
-.payload{
-	color: black;
-	border-radius: 0.4rem; 
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-	padding: 5px;
-	background-color: lightgray;
-	width: 40%;
-	height: auto;
+#media ul li a{
+	text-decoration: none;
+	color: white;
+}
+#studio ul li{
 	display: inline-block;
 }
-.btn{
-	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-	background-color:dodgerblue;
-	border: none;
-	width: 50%;
-	border-radius: 0.4rem;
-	padding: 5px;
-	font-size: 20px;
+#studio ul li a{
+	text-decoration: none;
+	color: white;
+}
+#address a{
+	text-decoration: none;
+	color: white;
+}
+.contain{
+	width: 100%;
+}
+.col{
+	display: inline-block;
+	width: 48%;
+	height: auto;
+}
+#media {
+		text-align: left;		
+}
+#address{
+		text-align: right;		
+}
+@media (max-width:768px)
+{
+	#address, #media, #studio{
+		text-align: center;		
+	}
+	.info{
+		text-align: center;
+	}
+	.col{
+	display:block;
+	width: 100%;		
+}
 }
