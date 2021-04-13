@@ -24,6 +24,7 @@
 	<div class="interceptorBG">
 		<div class ="OS" align="center">
 				<h2>ANXSION</h2>
+			<h4 class ="task">Work in progress</h4>
 			</div>
 		<div class="interceptorSIG" align="left">
 			<h2 class ="task" id="sys"></h2>
@@ -102,11 +103,11 @@
 		async function main(){
 			setTimeout(() => {document.getElementById("sys").innerHTML = "SYS ONLINE"; }, 300);
 			setTimeout(() => {document.getElementById("sys").innerHTML = "Initiating boot sequence"; }, 3000);
-			setTimeout(() => {document.getElementById("command").innerHTML = "Checking for updates" }, 5000);
-			setTimeout(() => {document.getElementById("command").innerHTML = "Loading /sys" }, 5400)
-			setTimeout(() => {document.getElementById("command").innerHTML = "Starting shell" }, 5800)
-			setTimeout(() => {document.getElementById("command").innerHTML = "Checking for instances" }, 6800)
-			setTimeout(() => {document.getElementById("command").innerHTML = "Loading instance" }, 7000);
+			setTimeout(() => {document.getElementById("command").innerHTML = "> Checking for updates" }, 5000);
+			setTimeout(() => {document.getElementById("command").innerHTML = "> Loading /sys" }, 5400)
+			setTimeout(() => {document.getElementById("command").innerHTML = "> Starting shell" }, 5800)
+			setTimeout(() => {document.getElementById("command").innerHTML = "> Checking for instances" }, 6800)
+			setTimeout(() => {document.getElementById("command").innerHTML = "> Loading instance" }, 7000);
 			setTimeout(() => {document.getElementById("command").innerHTML = "root@anxsion:~# " }, 9000);
 			setTimeout(() => {command(); }, 11000);
 			setTimeout(() => {document.getElementById("sys").innerHTML = "Intercepting"; }, 11000);
