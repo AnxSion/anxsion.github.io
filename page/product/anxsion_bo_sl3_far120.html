@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>ANXSION</title>
-<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" type="images/png" href="favicon.png">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,25 +45,66 @@
 <div id="mySidenav" class="sidenav">
 	<div align="center">
 	<p href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</p>
-	<a href="../index.html">HOME</a>
-	<a href="services.html">SERVICE</a>
-	<a href="store.html">STORE</a>	
-	<a href="contact.html">CONTACT</a>
+	<a href="../../index.html">HOME</a>
+	<a href="../services.html">SERVICE</a>
+	<a href="../store.html">STORE</a>	
+	<a href="../contact.html">CONTACT</a>
 		</div>
 </div>
 <div align="center">
-	<img class="banner" src="../img/banner.png" alt="Brand">
+	<img class="banner" src="../../img/banner.png" alt="Brand">
 </div>
 	<div Class ="Nav" align="center">
 		<span class="openBtn" onclick="openNav()">&#9776;</span>
 	</div>
-					<!--					Navigation Bar Ends					-->
-	
-	<div class="contact" align="left">
-		<h1 class="contacttitle">//Contact</h1>
-		<p>Got an intresting idea? We can help turn your ideas into reality.</p>
+
+	<!--					Navigation Bar Ends					-->
+<div class="storename" align="left">
+	<h2 class="storeback"><a  href="../store.html">&lt; Store</a></h2>
+</div>
+	<div id="item" class="itempanel">
+
+<div class="productpanel" align="center">
+	<div class="buytab">
+		<img class="buyimage" src="../../img/store/anxsion_bo_longsleeve.jpg" alt="Shirt">
+		<div class ="extrapanel">
+			<img class="extraimg" src="../../img/store/anxsion_bo_longsleeve.jpg" alt="img1">
+			<img class="extraimg" src="../../img/store/anxsion_bo_longsleeve.jpg" alt="img1">
+		</div>
+		
+	</div>
+	<div class="buytab" align="left">
+		<h2 name="product">SL-3/FAR120[Black Operations]</h2>
+		<h4>Rs. 1,299</h4>
+		<p>A longsleeved shirt of the //ARCHETYPE: Black Operations series.</p>
 		<br>
-	<form action="mailto:anxsion@gmail.com" method="post" align="left">
+		<div>
+		<div class="orderfunc">
+			<div class="orderfunc">
+			<label class="formlabel">Quantity</label>
+			<input class="formquantity" placeholder="1" type="text" name="quantity" required>
+			</div>
+			<label class="formlabel">Size</label>
+			<select class="formselect" type="text" name="size">
+			<option value="Small">Small</option>
+			<option value="Medium">Medium</option>
+			<option value="Large">Large</option>
+			<option value="X Large">X Large</option>
+		</select>
+			</div>
+		
+		</div>
+		
+		<button class="orderbtn" onclick="Order()">Order Now</button>
+		
+		
+	</div>
+</div>
+</div>
+	
+<div id="address" class="addresspanel">
+	<h3 class="details">//Details</h3>
+	<form action="../../script/anxsion.php" method="post" align="left">
 		
 		<label class="formlabel">Full Name</label>
 		<input class="forminput" type="text" name="name" required>
@@ -71,25 +112,58 @@
 		<label class="formlabel">Email address</label>
 		<input class="forminput" type="text" name="enail" required>
 		
-		<label class="formlabel">Message</label>
-		<textarea cols="20" class="formarea" type="text" name="zip" required></textarea>
+		<label class="formlabel">Address</label>
+		<input class="forminput" type="text" name="address" required>
+
+		<label class="formlabel">Street</label>
+		<input class="forminput" type="text" name="street" required>
 		
-		<input class="formbutton" type="submit" name="send" value="Send">
+		<label class="formlabel">District</label>
+		<input class="forminput" type="text" name="district" required>
+		
+		<label class="formlabel">State</label>
+		<input class="forminput" type="text" name="state" required>
+		
+		<label class="formlabel">Zip Code</label>
+		<input class="forminput" type="text" name="zip" required>
+		
+		<label class="formlabel">Payment Method</label>
+		<select class="formselect" type="text" name="payment">
+			<option class="formselectitem" value="Cash on Delivery">Cash On Delivery</option>
+			<option class="formselectitem" value="UPI">UPI</option>
+		</select>
+		
+		<input class="formbutton" type="submit" name="send" value="Order Now" onclick="Complete()">
 </form>
+</div>
+	
+<div id="thank" class="thankpanel">
+	<div align="center">
+		<h1>//Thank you for your order.</h1>
+		<p>Please check your email for updates</p>
 	</div>
-	
-	
-	
-	
-	
+</div>
+					<!--					Footer Bar Starts					-->
 	<br>
 	<div align="center">
 		<p>AnxSion &copy; 2021</p>
 		<p>All Rights Reserved.</p>
 	</div>
-					<!--					Footer Bar Ends						-->
-	
+
+
+					<!--					Footer Bar Ends						-->	
 <script>
+	function Complete(){
+		document.getElementById("address").style.display="none";
+		document.getElementById("thank").style.display="block";
+		setTimeout(function (){document.getElementById("thank").style.display="none";
+							   document.getElementById("item").style.display="block";},8000);
+	}
+	function Order(){
+		document.getElementById("item").style.display="none";
+		document.getElementById("address").style.display="block";
+		setTimeout(() => {;}, 500);
+	}
 		function openNav() {
 			document.getElementById("mySidenav").style.visibility = "visible";
 			document.getElementById("mySidenav").style.opacity = "1";
