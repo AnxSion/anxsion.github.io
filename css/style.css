@@ -7,12 +7,13 @@
 	-webkit-tap-highlight-color:transparent;
 }
 .banner{
-	margin-top:2px;
+	margin-top:3px;
+	height: auto;
 	width: 12%;
 }
 .Nav{
 	background: white;
-	font-size: 42px;
+	font-size: 36px;
 }
 @media screen and (max-width: 480px) {
 .banner{
@@ -87,24 +88,26 @@ font-size: 32px;
 	height:auto;
 }
 .servicebtn{
-	
-	font-weight: bold;
+	cursor: pointer;
 	bottom:16%;
 	left:10%;
 	position:absolute;
 	background: white;
 	border:none;
-	outline-color: white;
+	outline: none;
 	width: 16%;
 	height: 40px;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .servicebtn:hover{
 	color: white;
 	background: orangered;
 }
 .servicefull{
-	font-size: 26px;
+	margin: 10px;
+}
+.servicefull p{
+	font-size: 20px;
 }
 @media screen and (max-width: 480px) {
 	.servicebtn{
@@ -129,6 +132,7 @@ font-size: 32px;
 		left: 10%;
 		width: 12%;
 		height: 38px;
+		outline:none;
 	}
 }
 .contain{
@@ -194,6 +198,8 @@ font-size: 32px;
 	animation: phase 1s linear;
 }
 .storename{
+	height: auto;
+	font-size: 20px;
 	width: 100%;
 	background: black;
 	color: white;
@@ -303,6 +309,7 @@ font-size: 32px;
 	margin-bottom: 30px;
 	height: 40px;
 	font-size: 18px;
+	background: white;
 }
 .formselectitem{
 	cursor: pointer;
@@ -311,17 +318,20 @@ font-size: 32px;
 	margin-bottom: 30px;
 	height: 40px;
 	font-size: 18px;
+	background: white;
 }
 .orderfunc{
 	width: 50%;
 	display: inline-block;
 }
 .storeback{
-	display: inline-block;
-	font-size: 28px;
+	padding: 5px;
+	height: auto;
+	font-size: 20px;
 	margin-left: 10px;
 }
 .storeback a{
+	font-size: 22px;
 	color: white;
 	text-decoration: none;
 }
