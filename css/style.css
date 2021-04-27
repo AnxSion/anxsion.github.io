@@ -5,6 +5,7 @@
 	position: relative;
 	min-height:380px;
 	-webkit-tap-highlight-color:transparent;
+	overflow: visible;
 }
 .banner{
 	margin-top:3px;
@@ -13,7 +14,7 @@
 }
 .Nav{
 	background: white;
-	font-size: 36px;
+	font-size: 34px;
 }
 @media screen and (max-width: 480px) {
 .banner{
@@ -104,11 +105,14 @@ font-size: 32px;
 	background: orangered;
 }
 .servicefull{
+	width: 98%;
+	font-size: 20px;
 	margin: 10px;
 }
 .servicefull p{
 	font-size: 20px;
 }
+
 @media screen and (max-width: 480px) {
 	.servicebtn{
 		font-size: 12px;

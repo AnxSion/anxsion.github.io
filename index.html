@@ -23,7 +23,7 @@
 </script>
 </head>
 
-<body class="body">
+<body id="body" class="body">
 		<div id="intercept" class="intercept">
 	<p id="root"></p>
 	<p id="l1"></p>
@@ -96,14 +96,17 @@
 		function openNav() {
 			document.getElementById("mySidenav").style.visibility = "visible";
 			document.getElementById("mySidenav").style.opacity = "1";
+			document.getElementById("body").style.overflow="hidden";
 		}
 
 
 		function closeNav() {
 			document.getElementById("mySidenav").style.visibility = "hidden";
 			document.getElementById("mySidenav").style.opacity = "0";
+			document.getElementById("body").style.overflow="visible";
 		}
 		function main(){
+		document.getElementById("body").style.overflow="hidden";
 		document.getElementById("intercept").style.display="block";
 		document.getElementById("intercept").style.opacity="1";
 		setTimeout(() => {document.getElementById("root").innerHTML="root@anxsion:~# execute product.ag";}, 100);
@@ -121,7 +124,7 @@
 		setTimeout(() => {document.getElementById("l12").innerHTML="> establishing connection";}, 700);
 		setTimeout(() => {document.getElementById("l13").innerHTML="> final data check";}, 750);
 		setTimeout(() => {document.getElementById("l14").innerHTML="> execution complete";}, 800);
-		setTimeout(() => {document.getElementById("intercept").style.opacity="0";document.getElementById("intercept").style.display="none";}, 1000);
+		setTimeout(() => {document.getElementById("intercept").style.opacity="0";document.getElementById("intercept").style.display="none";document.getElementById("body").style.overflow="visible";}, 1000);
 	}
 	main();
 	</script>
