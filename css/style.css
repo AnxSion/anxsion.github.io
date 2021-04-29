@@ -6,6 +6,7 @@
 	min-height:380px;
 	-webkit-tap-highlight-color:transparent;
 	overflow: visible;
+	transition: 0.7s ease;
 }
 .banner{
 	margin-top:3px;
@@ -105,12 +106,17 @@ font-size: 32px;
 	background: orangered;
 }
 .servicefull{
-	width: 95%;
+	background: black;
+	color: white;
+	width: 100%;
 	font-size: 20px;
-	margin: 10px;
 }
 .servicefull p{
-	font-size: 20px;
+	font-size: 18px;
+}
+.servicebanner{
+	width: 100%;
+	height: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -147,6 +153,35 @@ font-size: 32px;
 	position: relative;
 	vertical-align: top;
 }
+.loadingLayer{
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top:0;
+	animation: loading 3s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+.progressBack{
+	top:50%;
+	left: 11%;
+	position: absolute;
+	background-color: lightgray;
+	height: 10px;
+	width: 80%;
+	border-radius: 5px;
+}
+.progressFront{
+	top:50%;
+	left: 11%;
+	position: absolute;
+	background-color: Black;
+	height: 10px;
+	width: 80%;
+	border-radius: 5px;
+	animation: profill 2.7s ease;
+}
 .product{
 	width: 100%;
 	height: auto;
@@ -155,13 +190,10 @@ font-size: 32px;
 }
 .overlay{
 	position: absolute;
-	top:0;
+	top:45%;
 	left: 0;
 	width:100%;
 	animation: soldout 2s ease;
-}
-.contain p{
-	animation: product 1s ease;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -172,32 +204,56 @@ font-size: 32px;
 ::-webkit-scrollbar-thumb {
   background: orangered;
 }
-@media screen and (max-width: 480px) {
-	.overlay{
-		top:25%;
+@keyframes profill{
+	0%{
+		width:0px;
 	}
+	50%{
+		width: 40%;
+	}
+	70%{
+		width: 60%;
+	}
+	90%{
+		width: 80%;
+	}
+	100%{
+		
+		width: 80%;
+	}
+}
+@keyframes loading{
+	0%{
+		opacity: 1;
+		visibility: visible;
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		visibility:visible;
+	}
+}
+@media screen and (max-width: 480px) {
 	.contain{
 		width: 45%;
 	}
 }
 @media (min-width: 481px) and (max-width: 768px) {
-	.overlay{
-		top:27%;
-	}
 	.contain{
 		width: 40%;
 	}
 }
 @media screen and (min-width: 769px) {
-	.overlay{
-		top:32%;
-	}
 	.contain{
 		width: 22%;
 	}
 
 }
+
 .itempanel{
+	position: relative;
 	display: block;
 	animation: phase 1s linear;
 }
