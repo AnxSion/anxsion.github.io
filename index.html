@@ -94,6 +94,11 @@
 	</footer>
 	
 	<script>
+		
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('script/serviceworker.js');
+		}
+		
 		function openNav() {
 			document.getElementById("mySidenav").style.visibility = "visible";
 			document.getElementById("mySidenav").style.opacity = "1";

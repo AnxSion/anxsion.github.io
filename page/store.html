@@ -162,6 +162,11 @@
 	</footer>
 
 	<script>
+
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('../script/serviceworker.js');
+		}
+
 		document.getElementById("body").style.overflow="visible";
 		function openNav() {
 			document.getElementById("mySidenav").style.visibility = "visible";

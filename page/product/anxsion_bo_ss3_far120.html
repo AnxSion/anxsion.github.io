@@ -166,29 +166,34 @@
 
 	<script>
 
+	if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('../../script/serviceworker.js');
+		}
+
 		function Complete(){
 			document.getElementById("address").style.display="none";
 			document.getElementById("thank").style.display="block";
-			setTimeout(function (){document.getElementById("thank").style.display="none";
-								document.getElementById("item").style.display="block";},6000);
+			setTimeout(function (){document.getElementById("thank").style.display="none";document.getElementById("item").style.display="block";},6000);
 		}
+
 		function Order(){
 			document.getElementById("item").style.display="none";
 			document.getElementById("address").style.display="block";
 			setTimeout(() => {;}, 500);
 		}
-			function openNav() {
-				document.getElementById("mySidenav").style.visibility = "visible";
-				document.getElementById("mySidenav").style.opacity = "1";
-				document.getElementById("body").style.overflow="hidden";
-			}
+			
+		function openNav() {
+			document.getElementById("mySidenav").style.visibility = "visible";
+			document.getElementById("mySidenav").style.opacity = "1";
+			document.getElementById("body").style.overflow="hidden";
+		}
 
+		function closeNav() {
+			document.getElementById("mySidenav").style.visibility= "hidden";
+			document.getElementById("mySidenav").style.opacity = "0";
+			document.getElementById("body").style.overflow="visible";
+		}
 
-			function closeNav() {
-				document.getElementById("mySidenav").style.visibility= "hidden";
-				document.getElementById("mySidenav").style.opacity = "0";
-				document.getElementById("body").style.overflow="visible";
-			}
 		function main(){
 			document.getElementById("body").style.overflow="hidden";
 			document.getElementById("intercept").style.display="block";
