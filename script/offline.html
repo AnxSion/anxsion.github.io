@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ANXSION | Offline</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="images/png" href="favicon.png">
+	<link rel="canonical" href="https://anxsion.github.io">
+	<link rel="manifest" href="/manifest.json">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="The official website of the AnxSion. Work in progress.">
+	<meta name="theme-color" content="black">
+	<meta name="msapplication-navbutton-color" content="black">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-53Y0LGEE69"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-53Y0LGEE69');
+	</script>
+		
+</head>
+
+<body id="body" class="body">
+
+	<div id="mySidenav" class="sidenav">
+		<div align="center">
+			<p href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</p>
+			<a href="index.html">HOME</a>
+			<a href="page/services.html">SERVICES</a>
+			<a href="page/store.html">STORE</a>	
+			<a href="page/contact.html">CONTACT</a>
+		</div>
+	</div>
+
+	<div Class ="Nav" align="center">
+		<div align="center">
+	<img class="banner" src="img/banner.png" width="3000" height="750" alt="Brand">
+
+	</div>
+		<span class="openBtn" onclick="openNav()">&#9776;</span>
+	</div>
+
+	<div align="center">
+		<br><br>
+		<h1>//OFFLINE</h1>
+
+	</div>
+	
+	<br>
+
+	<footer align="center">
+		<p><strong>AnxSion &copy; 2021</strong></p>
+		<p>All Rights Reserved.</p>
+	</footer>
+	
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.visibility = "visible";
+			document.getElementById("mySidenav").style.opacity = "1";
+			document.getElementById("body").style.overflow="hidden";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.visibility = "hidden";
+			document.getElementById("mySidenav").style.opacity = "0";
+			document.getElementById("body").style.overflow="visible";
+		}
+	</script>
+</body>
+</html>
