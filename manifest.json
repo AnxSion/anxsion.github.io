@@ -34,5 +34,9 @@
         "icons": [{ "src": "/img/pwa/services.png", "sizes": "192x192" }]
       }
     ],
-    "description": "Progressive Web Application of AnxSion"
+    "description": "Progressive Web Application of AnxSion",
+    "url": "https://anxsion.github.io/index.html",
+    "manifestUrl": "https://anxsion.github.io/manifest.json",
+    "lang": "en",
+    "orientation": "portrait"
   }
