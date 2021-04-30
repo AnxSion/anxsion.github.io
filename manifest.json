@@ -1,0 +1,38 @@
+{
+    "short_name": "AnxSion",
+    "name": "AnxSion",
+    "icons": [
+      {
+        "src": "/img/pwa/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img/pwa/icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "black",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#FF4500",
+    "shortcuts": [
+      {
+        "name": "Visit Store",
+        "short_name": "Store",
+        "description": "Visit the AnxSion Store",
+        "url": "/store.html",
+        "icons": [{ "src": "/img/pwa/store.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "View Services",
+        "short_name": "Services",
+        "description": "View available services",
+        "url": "/services.html",
+        "icons": [{ "src": "/img/pwa/services.png", "sizes": "192x192" }]
+      }
+    ],
+    "description": "Progressive Web Application of AnxSion"
+  }
