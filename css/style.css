@@ -167,15 +167,15 @@ height: 38px;
 }
 @media (min-width: 481px) and (max-width: 768px) {
 .servicebtn{
-font-size: 10px;
+font-size: 12px;
 left: 10%;
-width: 22%;
+width: 20%;
 height: 38px;
 }
 }
 @media screen and (min-width: 769px) {
 .servicebtn{
-font-size: 18px;
+font-size: 14px;
 left: 10%;
 width: 12%;
 height: 38px;
