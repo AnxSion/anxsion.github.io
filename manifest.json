@@ -9,8 +9,8 @@
         "purpose": "any"
       },
       {
-        "src": "/img/pwa/maskable_icon_196.png",
-        "sizes": "196x196",
+        "src": "/img/pwa/maskable_icon_192.png",
+        "sizes": "192x192",
         "type": "image/png",
         "purpose": "maskable"
       },
