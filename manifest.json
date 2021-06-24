@@ -27,10 +27,10 @@
         "purpose": "maskable"
       }
     ],
-    "start_url": "https://anxsion.github.io/",
+    "start_url": "https://anxsion.github.io/index.html",
     "background_color": "white",
     "display": "standalone",
-    "scope": "https://anxsion.github.io/",
+    "scope": "/",
     "theme_color": "#FF4500",
     "shortcuts": [
       {
