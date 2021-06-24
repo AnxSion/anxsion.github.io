@@ -162,15 +162,15 @@ height: auto;
 font-size: 12px;
 left: 5%;
 width: 24%;
-height: 30px;
+height: 38px;
 }
 }
 @media (min-width: 481px) and (max-width: 768px) {
 .servicebtn{
 font-size: 12px;
 left: 10%;
-width: 20%;
-height: 30px;
+width: 22%;
+height: 38px;
 }
 }
 @media screen and (min-width: 769px) {
@@ -179,7 +179,6 @@ font-size: 18px;
 left: 10%;
 width: 12%;
 height: 38px;
-outline:none;
 }
 }
 .contain{
