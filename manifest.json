@@ -30,7 +30,7 @@
     "start_url": "https://anxsion.github.io/",
     "background_color": "white",
     "display": "standalone",
-    "scope": "/",
+    "scope": "https://anxsion.github.io/",
     "theme_color": "#FF4500",
     "shortcuts": [
       {
