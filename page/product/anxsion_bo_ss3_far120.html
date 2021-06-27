@@ -115,7 +115,7 @@
 
 		<h3 class="details">//Details</h3>
 		
-		<form action="../../script/anxsion.php" method="post" align="left">
+		<form name="senddata" method="post" align="left">
 			
 			<label class="formlabel">Full Name</label>
 			<input class="forminput" type="text" id="name" name="name" required>
@@ -171,6 +171,15 @@
 			navigator.serviceWorker.register('../../script/serviceworker.js');
 		}
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyFIKQnzpvFQf_XMeb8-QHgoX0b4X_EszsN6sBmFjM0901xIVKqZc2KLe9TsuRSPjMH/exec'
+  const form = document.forms['senddata']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
 
 		function Complete(){
 			document.getElementById("address").style.display="none";
