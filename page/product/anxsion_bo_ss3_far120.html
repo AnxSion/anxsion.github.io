@@ -80,8 +80,8 @@
 			
 			<div class="buytab" align="left">
 
-				<h3 name="product">SS3/FAR120[Black Operations]</h3>
-				<h4>Rs. 1,299</h4>
+				<h3 id="product" name="product">SS3/FAR120[Black Operations]</h3>
+				<h4 id="price" name="price">Rs. 1,299</h4>
 				<p>A standard shirt of the //ARCHETYPE: Black Operations series.</p>
 				
 				<br>
@@ -89,11 +89,11 @@
 					<div class="orderfunc">
 						<div class="orderfunc">
 						<label class="formlabel">Quantity</label>
-						<input class="formquantity" placeholder="1" type="text" name="quantity" required>
+						<input id="quantity" name="quantity" class="formquantity" placeholder="1" type="text" name="quantity" required>
 					</div>
 					
 					<label class="formlabel">Size</label>
-					<select class="formselect" type="text" name="size">
+					<select id="size" name="size" class="formselect" type="text" name="size">
 						<option value="Small">Small</option>
 						<option value="Medium">Medium</option>
 						<option value="Large">Large</option>
@@ -118,34 +118,34 @@
 		<form action="../../script/anxsion.php" method="post" align="left">
 			
 			<label class="formlabel">Full Name</label>
-			<input class="forminput" type="text" name="name" required>
+			<input class="forminput" type="text" id="name" name="name" required>
 
 			<label class="formlabel">Email address</label>
-			<input class="forminput" type="text" name="enail" required>
+			<input class="forminput" type="text" id="email" name="email" required>
 			
 			<label class="formlabel">Address</label>
-			<input class="forminput" type="text" name="address" required>
+			<input class="forminput" type="text" id="address" name="address" required>
 
 			<label class="formlabel">Street</label>
-			<input class="forminput" type="text" name="street" required>
+			<input class="forminput" type="text" id="street" name="street" required>
 			
 			<label class="formlabel">District</label>
-			<input class="forminput" type="text" name="district" required>
+			<input class="forminput" type="text" id="district" name="district" required>
 			
 			<label class="formlabel">State</label>
-			<input class="forminput" type="text" name="state" required>
+			<input class="forminput" type="text" id="state" name="state" required>
 			
 			<label class="formlabel">Zip Code</label>
-			<input class="forminput" type="text" name="zip" required>
+			<input class="forminput" type="text" id="zip" name="zip" required>
 			
 			<label class="formlabel">Payment Method</label>
 			
-			<select class="formselect" type="text" name="payment">
+			<select id="payment" name="payment" class="formselect" type="text" name="payment">
 				<option class="formselectitem" value="Cash on Delivery">Cash On Delivery</option>
 				<option class="formselectitem" value="UPI">UPI</option>
 			</select>
 			
-			<input class="formbutton" type="submit" name="send" value="Order Now" onclick="Complete()">
+			<input class="formbutton" type="submit" name="send" id="send" value="Order Now" onclick="Complete()">
 		
 		</form>
 	
