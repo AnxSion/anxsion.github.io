@@ -308,7 +308,8 @@ color: white;
 text-decoration: none;
 }
 .thankpanel{
-width: 80%;
+padding:4px;
+width: 100%;
 display:none;
 animation: phase 1s linear;
 }
