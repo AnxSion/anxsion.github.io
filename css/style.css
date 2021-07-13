@@ -8,14 +8,14 @@ position: relative;
 overflow: visible;
 transition: 0.7s ease;
 scroll-behavior: smooth;
-padding-bottom: 20px;
 min-height: 100%;
 }
-footer{
-position: absolute;
+.MainPage{
+margin: 0;
+margin-bottom:30px
+}
 height:20px;
 width: 100%;
-bottom: 0;
 }
 progress::-webkit-progress-bar{
     background-color:orangered;
