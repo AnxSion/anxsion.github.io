@@ -200,7 +200,7 @@ visibility: hidden;
 top:50%;
 left: 11%;
 position: absolute;
-background-color: lightgray;
+background-color: black;
 height: 7px;
 width: 80%;
 }
@@ -208,7 +208,7 @@ width: 80%;
 top:50%;
 left: 11%;
 position: absolute;
-background-color: Black;
+background-color: red;
 height: 7px;
 width: 80%;
 animation: profill 1s ease;
