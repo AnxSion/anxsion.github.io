@@ -119,7 +119,7 @@ width: 8px;
 background: black;
 }
 ::-webkit-scrollbar-thumb {
-background: green;
+background: #39FF14;
 }
 .servicebox{
 position: relative;
