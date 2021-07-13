@@ -245,7 +245,7 @@ width: 22%;
 .itempanel{
 position: relative;
 display: block;
-animation: phase 2s ease;
+animation: phase 1.5s ease;
 }
 .storename{
 height: auto;
@@ -313,7 +313,7 @@ text-decoration: none;
 .thankpanel{
 width: 100%;
 display:none;
-animation: phase 2s ease;
+animation: phase 1.5s ease;
 }
 .formlabel{
 width: 100%;
@@ -443,9 +443,6 @@ opacity: 0;
 @keyframes phase {
 0%{
 opacity: 0;
-}
-50%{
-opacity: 0.4;
 }
 100%{
 opacity: 1;
