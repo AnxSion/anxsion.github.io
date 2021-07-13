@@ -10,11 +10,8 @@ transition: 0.7s ease;
 scroll-behavior: smooth;
 min-height: 100%;
 }
-.MainPage{
-margin: 0;
-margin-bottom:30px
-}
-height:20px;
+footer{
+background: red;
 width: 100%;
 }
 progress::-webkit-progress-bar{
