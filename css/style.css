@@ -295,18 +295,7 @@ width:95%;
 width:45%;
 }
 }
-.addresspanel{
-width: 80%;
-height: auto;
-background: white;
-margin-left: 10%;
-display: none;
-animation: phase 1s linear;
-}
-.orderfunc{
-width: 50%;
-display: inline-block;
-}
+
 .storeback{
 padding: 5px;
 height: auto;
