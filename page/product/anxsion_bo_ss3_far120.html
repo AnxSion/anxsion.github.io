@@ -78,69 +78,17 @@
 		<h4>Rs. 1,299</h4>
 		<p>A longsleeved shirt of the //ARCHETYPE: Black Operations series.</p>
 		<br>
-		<div>
-		<div class="orderfunc">
-			<div class="orderfunc">
-			<label class="formlabel">Quantity</label>
-			<input class="formquantity" placeholder="1" type="text" name="quantity" required>
-			</div>
-			<label class="formlabel">Size</label>
-			<select class="formselect" type="text" name="size">
-			<option value="Small">Small</option>
-			<option value="Medium">Medium</option>
-			<option value="Large">Large</option>
-			<option value="X Large">X Large</option>
-		</select>
-			</div>
 		
-		</div>
-		
-		<button class="orderbtn" onclick="Order()">Order Now</button>
-		
-		
+		<button class="orderbtn" onclick="Order()">Request</button>	
 	</div>
 </div>
 </div>
 	
-<div id="address" class="addresspanel">
-	<h3 class="details">//Details</h3>
-	<form action="../../script/anxsion.php" method="post" align="left">
-		
-		<label class="formlabel">Full Name</label>
-		<input class="forminput" type="text" name="name" required>
 
-		<label class="formlabel">Email address</label>
-		<input class="forminput" type="text" name="enail" required>
-		
-		<label class="formlabel">Address</label>
-		<input class="forminput" type="text" name="address" required>
-
-		<label class="formlabel">Street</label>
-		<input class="forminput" type="text" name="street" required>
-		
-		<label class="formlabel">District</label>
-		<input class="forminput" type="text" name="district" required>
-		
-		<label class="formlabel">State</label>
-		<input class="forminput" type="text" name="state" required>
-		
-		<label class="formlabel">Zip Code</label>
-		<input class="forminput" type="text" name="zip" required>
-		
-		<label class="formlabel">Payment Method</label>
-		<select class="formselect" type="text" name="payment">
-			<option class="formselectitem" value="Cash on Delivery">Cash On Delivery</option>
-			<option class="formselectitem" value="UPI">UPI</option>
-		</select>
-		
-		<input class="formbutton" type="submit" name="send" value="Order Now" onclick="Complete()">
-</form>
-</div>
-	
 <div id="thank" class="thankpanel">
 	<div align="center">
-		<h1>//Thank you for your order.</h1>
-		<p>Please check your email for updates</p>
+		<h1>//We appreciate your curiosity</h1>
+		<p>However the product is not available as of now.</p>
 	</div>
 </div>
 					<!--					Footer Bar Starts					-->
@@ -151,31 +99,23 @@
 	</footer>
 					<!--					Footer Bar Ends						-->	
 <script>
-	function Complete(){
-		document.getElementById("address").style.display="none";
-		document.getElementById("thank").style.display="block";
-		setTimeout(function (){document.getElementById("thank").style.display="none";
-							   document.getElementById("item").style.display="block";},8000);
-	}
 	function Order(){
 		document.getElementById("item").style.display="none";
-		document.getElementById("address").style.display="block";
+		document.getElementById("thank").style.display="block";
+		setTimeout(function (){document.getElementById("thank").style.display="none";document.getElementById("item").style.display="block";},8000);
 		setTimeout(() => {;}, 500);
 	}
 		function openNav() {
 			document.getElementById("mySidenav").style.visibility = "visible";
 			document.getElementById("mySidenav").style.opacity = "1";
-			document.getElementById("body").style.overflow="hidden";
 		}
 
 
 		function closeNav() {
 			document.getElementById("mySidenav").style.visibility = "hidden";
 			document.getElementById("mySidenav").style.opacity = "0";
-			document.getElementById("body").style.overflow="visible";
 		}
 	function main(){
-		document.getElementById("body").style.overflow="hidden";
 		document.getElementById("intercept").style.display="block";
 		document.getElementById("intercept").style.opacity="1";
 		setTimeout(() => {document.getElementById("root").innerHTML="root@anxsion:~# execute product.ag";}, 100);
@@ -193,7 +133,7 @@
 		setTimeout(() => {document.getElementById("l12").innerHTML="> establishing connection";}, 700);
 		setTimeout(() => {document.getElementById("l13").innerHTML="> final data check";}, 750);
 		setTimeout(() => {document.getElementById("l14").innerHTML="> execution complete";}, 800);
-		setTimeout(() => {document.getElementById("intercept").style.opacity="0";document.getElementById("intercept").style.display="none";document.getElementById("body").style.overflow="visible";}, 1000);
+		setTimeout(() => {document.getElementById("intercept").style.opacity="0";document.getElementById("intercept").style.display="none";}, 1000);
 	}
 	main();
 	</script>
