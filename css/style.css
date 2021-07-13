@@ -245,7 +245,7 @@ width: 22%;
 .itempanel{
 position: relative;
 display: block;
-animation: phase 1.5s ease;
+animation: phase 1s ease;
 }
 .storename{
 height: auto;
@@ -313,7 +313,7 @@ text-decoration: none;
 .thankpanel{
 width: 100%;
 display:none;
-animation: phase 1.5s ease;
+animation: phase 1s ease;
 }
 .formlabel{
 width: 100%;
@@ -389,7 +389,7 @@ margin: 10px;
 height: auto;
 background: white;
 display: inline-block;
-animation: phase 1s linear;
+animation: phase 1s ease;
 }
 @media screen and (max-width: 480px) {
 .contacttitle{
