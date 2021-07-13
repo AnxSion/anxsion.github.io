@@ -18,10 +18,10 @@ height:20px;
 width: 100%;
 }
 progress::-webkit-progress-bar{
-    background-color:red;
+    background-color:#39FF14;
 }
 progress::-moz-progress-bar{
-    background-color:red;
+    background-color:#39FF14;
 }
 .banner{
 margin-top:3px;
@@ -74,14 +74,14 @@ font-size: 32px;
 transition: 0.3s ease;
 }
 .sidenav a:hover {
-color: red;
+color: #39FF14;
 }
 .openBtn{
 cursor: pointer;
 transition: 0.5s;
 }
 .openBtn:hover{
-color: red;
+color: #39FF14;
 }
 .closebtn {
 cursor: pointer;
@@ -143,7 +143,7 @@ transition: 0.3s;
 }
 .servicebtn:hover{
 color: white;
-background: red;
+background: #39FF14;
 }
 .servicefull{
 background: black;
