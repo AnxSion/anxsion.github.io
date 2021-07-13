@@ -308,7 +308,7 @@ color: white;
 text-decoration: none;
 }
 .thankpanel{
-width: 100%;
+width: 80%;
 display:none;
 animation: phase 1s linear;
 }
@@ -441,6 +441,9 @@ opacity: 0;
 @keyframes phase {
 0%{
 opacity: 0;
+}
+50%{
+opacity: 0.5;
 }
 100%{
 opacity: 1;
