@@ -245,7 +245,7 @@ width: 22%;
 .itempanel{
 position: relative;
 display: block;
-animation: phase 1s linear;
+animation: phase 2s ease;
 }
 .storename{
 height: auto;
@@ -311,9 +311,9 @@ color: white;
 text-decoration: none;
 }
 .thankpanel{
-width: 98%;
+width: 100%;
 display:none;
-animation: phase 1s linear;
+animation: phase 2s ease;
 }
 .formlabel{
 width: 100%;
