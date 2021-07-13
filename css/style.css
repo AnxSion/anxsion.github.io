@@ -311,8 +311,7 @@ color: white;
 text-decoration: none;
 }
 .thankpanel{
-padding:4%;
-width: 96%;
+width: 98%;
 display:none;
 animation: phase 1s linear;
 }
