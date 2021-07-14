@@ -396,9 +396,6 @@ background: white;
  -webkit-user-select: none;
  -moz-user-select: none;
  }
-.anxdata{
-border:2px solid black;
-}
 @media screen and (max-width: 480px) {
 .contacttitle{
 width: 90%;
