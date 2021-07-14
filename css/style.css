@@ -381,7 +381,8 @@ font-size: 18px;
 background: white;
 }
 .projectpageTitle{
- background:black;
+ background-color:black;
+ color:white
 }
 .projectcontainer{
  width:94%;
@@ -392,7 +393,6 @@ background: white;
  background:black;
  height:1.2em;
  width:100%;
- content:" ";
  user-select:none;
  -webkit-user-select: none;
  -moz-user-select: none;
