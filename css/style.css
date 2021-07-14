@@ -383,6 +383,10 @@ background: white;
  height:auto;
  margin:3%;
 }
+projectlayer{
+width:100%;
+height:auto;
+}
 .projectlayerbg{
  position:relative;
  width:100%;
