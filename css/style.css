@@ -380,7 +380,7 @@ height: 40px;
 font-size: 18px;
 background: white;
 }
-.bo{
+.bo:after{
  background:black;
  height:1.2em;
  width:100%;
