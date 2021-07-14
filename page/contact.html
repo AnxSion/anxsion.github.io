@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 	<title>ANXSION</title>
-	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
 	<link rel="icon" type="images/png" href="../favicon.png">
 	<link rel="manifest" href="/manifest.json">
 	<meta charset="utf-8">
@@ -26,62 +26,27 @@
 </head>
 
 <body id="body" class="body">
-
-	<div id="intercept" class="intercept">
-		<p id="root"></p>
-		<p id="l1"></p>
-		<p id="l2"></p>
-		<p id="l3"></p>
-		<p id="l4"></p>
-		<p id="l5"></p>
-		<p id="l6"></p>
-		<p id="l7"></p>
-		<p id="l8"></p>
-		<p id="l9"></p>
-		<p id="l10"></p>
-		<p id="l11"></p>
-		<p id="l12"></p>
-		<p id="l13"></p>
-		<p id="l14"></p>
-	</div>
-
 	<div id="mySidenav" class="sidenav">
 		<div align="center">
 			<p href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</p>
 			<a href="../index.html">HOME</a>
 			<a href="services.html">SERVICE</a>
 			<a href="store.html">STORE</a>	
-			<a href="contact.html">CONTACT</a>
+			<a href="project.html">PROJECT</a>
 		</div>
 	</div>
 
 	<div align="center">
-		<img class="banner" src="../img/banner.webp" width="3000" height="750" alt="Brand">
+		<img class="banner" src="/img/banner.webp" width="3000" height="750" alt="Brand">
 	</div>
 
 	<div Class ="Nav" align="center">
 		<span class="openBtn" onclick="openNav()">&#9776;</span>
 	</div>
 	
-	<div class="contact" align="left">
-		<h1 class="contacttitle">//Contact</h1>
-		<p>Got an intresting idea? We can help turn your ideas into reality.</p>
-
-		<br>
-		
-		<form action="mailto:anuraglama5@gmail.com" method="post" align="left">
-			
-			<label class="formlabel">Full Name</label>
-			<input class="forminput" type="text" name="name" required>
-
-			<label class="formlabel">Email address</label>
-			<input class="forminput" type="text" name="enail" required>
-			
-			<label class="formlabel">Message</label>
-			<textarea cols="20" class="formarea" type="text" name="zip" required></textarea>
-			
-			<input class="formbutton" type="submit" name="send" value="Send">
-		</form>
+	<div align="Center">
+		<h1 class="contacttitle">//PROJECTS</h1>
+		<h2>[REDACTED]</h2>
 	</div>
 	
 	<br>
@@ -93,46 +58,19 @@
 	<script>
 
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('../serviceworker.js');
+			navigator.serviceWorker.register('/serviceworker.js');
 		}
 			
 		function openNav() {
 				document.getElementById("mySidenav").style.visibility = "visible";
 				document.getElementById("mySidenav").style.opacity = "1";
-				document.getElementById("body").style.overflow="hidden";
 		}
 
 
 		function closeNav() {
 				document.getElementById("mySidenav").style.visibility = "hidden";
 				document.getElementById("mySidenav").style.opacity = "0";
-				document.getElementById("body").style.overflow="visible";
 		}
-
-		function main(){
-			document.getElementById("body").style.overflow="hidden";
-			document.getElementById("intercept").style.display="block";
-			document.getElementById("intercept").style.opacity="1";
-			setTimeout(() => {document.getElementById("root").innerHTML="root@anxsion:~# execute data.ag";}, 100);
-			setTimeout(() => {document.getElementById("l1").innerHTML="> executing data.ag";}, 150);
-			setTimeout(() => {document.getElementById("l2").innerHTML="> allocating memory";}, 200);
-			setTimeout(() => {document.getElementById("l3").innerHTML="> pulling data";}, 250);
-			setTimeout(() => {document.getElementById("l4").innerHTML="> staging network system";}, 300);
-			setTimeout(() => {document.getElementById("l5").innerHTML="> checking  signature";}, 350);
-			setTimeout(() => {document.getElementById("l6").innerHTML="> checking SHA256";}, 400);
-			setTimeout(() => {document.getElementById("l7").innerHTML="> HASH:3637ABBE748054AD523876829304FF1070C72A47";}, 450);
-			setTimeout(() => {document.getElementById("l8").innerHTML="> checking integrity";}, 500);
-			setTimeout(() => {document.getElementById("l9").innerHTML="> extracting data";}, 550);
-			setTimeout(() => {document.getElementById("l10").innerHTML="> logging data";}, 600);
-			setTimeout(() => {document.getElementById("l11").innerHTML="> checking connections";}, 650);
-			setTimeout(() => {document.getElementById("l12").innerHTML="> establishing connection";}, 700);
-			setTimeout(() => {document.getElementById("l13").innerHTML="> final data check";}, 750);
-			setTimeout(() => {document.getElementById("l14").innerHTML="> execution complete";}, 800);
-			setTimeout(() => {document.getElementById("intercept").style.opacity="0";document.getElementById("intercept").style.display="none";document.getElementById("body").style.overflow="visible";}, 1000);
-		}
-		
-		main();
-	
 	</script>
 
 </body>
