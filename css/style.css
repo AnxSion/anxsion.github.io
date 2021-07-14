@@ -3,6 +3,7 @@
 width:100%;
 margin: 0;
 font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+font-display:swap;
 position: relative;
 -webkit-tap-highlight-color:transparent;
 overflow: visible;
