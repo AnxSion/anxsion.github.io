@@ -382,7 +382,7 @@ background: white;
 }
 .projectpageTitle{
  background-color:black;
- color:white
+ color:white;
 }
 .projectcontainer{
  width:94%;
@@ -392,7 +392,6 @@ background: white;
 .bo{
  background:black;
  height:1.2em;
- width:100%;
  user-select:none;
  -webkit-user-select: none;
  -moz-user-select: none;
