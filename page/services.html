@@ -26,24 +26,6 @@
 </head>
 
 <body id="body" class="body">
-	<div id="intercept" class="intercept">
-		<p id="root"></p>
-		<p id="l1"></p>
-		<p id="l2"></p>
-		<p id="l3"></p>
-		<p id="l4"></p>
-		<p id="l5"></p>
-		<p id="l6"></p>
-		<p id="l7"></p>
-		<p id="l8"></p>
-		<p id="l9"></p>
-		<p id="l10"></p>
-		<p id="l11"></p>
-		<p id="l12"></p>
-		<p id="l13"></p>
-		<p id="l14"></p>
-	</div>
-
 	<div id="mySidenav" class="sidenav">
 		<div align="center">
 			<p href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</p>
@@ -213,30 +195,6 @@
 				document.getElementById("mySidenav").style.visibility = "hidden";
 				document.getElementById("mySidenav").style.opacity = "0";
 		}
-
-		function main(){
-			document.getElementById("intercept").style.display="block";
-			document.getElementById("intercept").style.opacity="1";
-			setTimeout(() => {document.getElementById("root").innerHTML="root@anxsion:~# execute data.ag";}, 100);
-			setTimeout(() => {document.getElementById("l1").innerHTML="> executing data.ag";}, 150);
-			setTimeout(() => {document.getElementById("l2").innerHTML="> allocating memory";}, 200);
-			setTimeout(() => {document.getElementById("l3").innerHTML="> pulling data";}, 250);
-			setTimeout(() => {document.getElementById("l4").innerHTML="> staging network system";}, 300);
-			setTimeout(() => {document.getElementById("l5").innerHTML="> checking  signature";}, 350);
-			setTimeout(() => {document.getElementById("l6").innerHTML="> checking SHA256";}, 400);
-			setTimeout(() => {document.getElementById("l7").innerHTML="> HASH:3637ABBE748054AD523876829304FF1070C72A47";}, 450);
-			setTimeout(() => {document.getElementById("l8").innerHTML="> checking integrity";}, 500);
-			setTimeout(() => {document.getElementById("l9").innerHTML="> extracting data";}, 550);
-			setTimeout(() => {document.getElementById("l10").innerHTML="> logging data";}, 600);
-			setTimeout(() => {document.getElementById("l11").innerHTML="> checking connections";}, 650);
-			setTimeout(() => {document.getElementById("l12").innerHTML="> establishing connection";}, 700);
-			setTimeout(() => {document.getElementById("l13").innerHTML="> final data check";}, 750);
-			setTimeout(() => {document.getElementById("l14").innerHTML="> execution complete";}, 800);
-			setTimeout(() => {document.getElementById("intercept").style.opacity="0";document.getElementById("intercept").style.display="none";document.getElementById("body").style.overflow="visible";}, 1000);
-		}
-
-		main();
-	
 	</script>
 
 </body>
