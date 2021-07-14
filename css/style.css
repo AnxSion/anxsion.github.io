@@ -14,12 +14,6 @@ min-height: 100%;
 footer{
 width: 100%;
 }
-progress::-webkit-progress-bar{
-background-color:red;
-}
-progress::-moz-progress-bar{
-background-color:red;
-}
 .banner{
 margin-top:3px;
 height: auto;
@@ -381,8 +375,8 @@ font-size: 18px;
 background: white;
 }
 .projectpageTitle{
- background-color:black;
- color:white;
+ background-color:red;
+ color:black;
 }
 .projectcontainer{
  width:94%;
