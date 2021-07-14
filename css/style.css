@@ -311,7 +311,9 @@ color: white;
 text-decoration: none;
 }
 .thankpanel{
-width: 100%;
+margin-left:3%;
+margin-right:3%;
+width: 94%;
 display:none;
 animation: phase 1s ease;
 }
