@@ -379,21 +379,12 @@ margin-bottom: 30px;
 height: 40px;
 font-size: 18px;
 background: white;
-}
-.contacttitle{
-width: 80%;
-background: black;
-color: white;
-}
-.contact{
-font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-width: 70%;
-margin: 10px;
-height: auto;
-background: white;
-display: inline-block;
-animation: phase 1s ease;
-}
+.bo{
+ background:black;
+ height:1.2em;
+ width:100%;
+ content:" ";
+ }
 @media screen and (max-width: 480px) {
 .contacttitle{
 width: 90%;
