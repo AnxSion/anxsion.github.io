@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>ANXSION</title>
-<link href="../../css/style.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="images/png" href="../../../favicon.png">
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="images/png" href="/favicon.png">
+<link rel="prefetch" href="/index.html">
+<link rel="prefetch" href="/page/services.html">
+<link rel="prefetch" href="/page/store.html">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,35 +27,17 @@
 </head>
 
 <body id="body" class="body">
-<div id="intercept" class="intercept">
-	<p id="root"></p>
-	<p id="l1"></p>
-	<p id="l2"></p>
-	<p id="l3"></p>
-	<p id="l4"></p>
-	<p id="l5"></p>
-	<p id="l6"></p>
-	<p id="l7"></p>
-	<p id="l8"></p>
-	<p id="l9"></p>
-	<p id="l10"></p>
-	<p id="l11"></p>
-	<p id="l12"></p>
-	<p id="l13"></p>
-	<p id="l14"></p>
-</div>
-					<!--					Navigation Bar Starts					-->
 <div id="mySidenav" class="sidenav">
 	<div align="center">
 	<p href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</p>
-	<a href="../../index.html">HOME</a>
+	<a href="/index.html">HOME</a>
 	<a href="../services.html">SERVICE</a>
 	<a href="../store.html">STORE</a>	
 	<a href="../contact.html">CONTACT</a>
 		</div>
 </div>
 <div align="center">
-	<img class="banner" src="../../img/banner.png" alt="Brand">
+	<img class="banner" src="/img/banner.png" alt="Brand">
 </div>
 	<div Class ="Nav" align="center">
 		<span class="openBtn" onclick="openNav()">&#9776;</span>
@@ -66,10 +51,10 @@
 
 <div class="productpanel" align="center">
 	<div class="buytab">
-		<img class="buyimage" src="../../img/store/anxsion_bo_fanny.jpg" alt="Shirt">
+		<img class="buyimage" src="/img/store/anxsion_bo_fanny.jpg" alt="AnxSion Black Operaions Kit Bag">
 		<div class ="extrapanel">
-			<img class="extraimg" src="../../img/store/anxsion_bo_fanny.jpg" alt="img1">
-			<img class="extraimg" src="../../img/store/anxsion_bo_fanny.jpg" alt="img1">
+			<img class="extraimg" src="/img/store/anxsion_bo_fanny.jpg" alt="AnxSion Black Operaions Kit Bag">
+			<img class="extraimg" src="/img/store/anxsion_bo_fanny.jpg" alt="AnxSion Black Operaions Kit Bag">
 		</div>
 		
 	</div>
@@ -88,7 +73,7 @@
 	<div align="center">
 		<br><br>
 		<h1>//We appreciate your curiosity</h1>
-		<p>However the product is not available as of now.</p>
+		<p>However the product is not available.</p>
 	</div>
 </div>
 				<!--					Footer Bar Starts					-->
@@ -115,27 +100,6 @@
 			document.getElementById("mySidenav").style.visibility = "hidden";
 			document.getElementById("mySidenav").style.opacity = "0";
 		}
-	function main(){
-		document.getElementById("intercept").style.display="block";
-		document.getElementById("intercept").style.opacity="1";
-		setTimeout(() => {document.getElementById("root").innerHTML="root@anxsion:~# execute product.ag";}, 100);
-		setTimeout(() => {document.getElementById("l1").innerHTML="> executing product.ag";}, 150);
-		setTimeout(() => {document.getElementById("l2").innerHTML="> allocating memory";}, 200);
-		setTimeout(() => {document.getElementById("l3").innerHTML="> pulling data";}, 250);
-		setTimeout(() => {document.getElementById("l4").innerHTML="> staging order system";}, 300);
-		setTimeout(() => {document.getElementById("l5").innerHTML="> checking product signature";}, 350);
-		setTimeout(() => {document.getElementById("l6").innerHTML="> checking SHA256";}, 400);
-		setTimeout(() => {document.getElementById("l7").innerHTML="> HASH:3637ABBE748054AD523876829304FF1070C72A47";}, 450);
-		setTimeout(() => {document.getElementById("l8").innerHTML="> checking integrity";}, 500);
-		setTimeout(() => {document.getElementById("l9").innerHTML="> extracting data";}, 550);
-		setTimeout(() => {document.getElementById("l10").innerHTML="> logging data";}, 600);
-		setTimeout(() => {document.getElementById("l11").innerHTML="> checking connections";}, 650);
-		setTimeout(() => {document.getElementById("l12").innerHTML="> establishing connection";}, 700);
-		setTimeout(() => {document.getElementById("l13").innerHTML="> final data check";}, 750);
-		setTimeout(() => {document.getElementById("l14").innerHTML="> execution complete";}, 800);
-		setTimeout(() => {document.getElementById("intercept").style.opacity="0";document.getElementById("intercept").style.display="none";}, 1000);
-	}
-	main();
 	</script>
 </body>
 </html>
