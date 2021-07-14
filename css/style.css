@@ -383,6 +383,17 @@ background: white;
  height:auto;
  margin:3%;
 }
+.projectlayerbg{
+ position:relative;
+ width:100%;
+ height:auto;
+}
+.projectlayerdata{
+ position:absolute;
+ left:50%;
+ width:100%;
+ height:auto;
+}
 .bo{
  background:black;
  height:1.2em;
