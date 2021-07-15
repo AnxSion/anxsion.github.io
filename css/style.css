@@ -384,19 +384,14 @@ background: white;
  margin:3%;
 }
 .projectlayer{
+position:relative;
 width:100%;
 height:auto;
 }
-.projectlayerbg{
- position:relative;
- width:100%;
- height:auto;
-}
 .projectlayerdata{
  position:absolute;
- left:50%;
- width:100%;
- height:auto;
+ left:0;
+ vertical-align:middle;
 }
 .bo{
  background:black;
