@@ -89,23 +89,6 @@ color:red;
 font-size: 30px;
 }
 }
-.intercept{
-overflow:hidden;
-z-index: 4;
-background: black;
-color: white;
-width: 100%;
-height: 500%;
-position: fixed;
-display: block;
-opacity: 1;
-transition: 0.8s ease;
-animation: inter 1.5s ease;
-}
-.intercept p{
-margin-left: 10px;
-font-size: 14px;
-}
 ::-webkit-scrollbar {
 width: 8px;
 } 
@@ -397,6 +380,7 @@ height:auto;
 }
 .bo{
  background:white;
+ z-index:1;
  height:1.2em;
  user-select:none;
  -webkit-user-select: none;
