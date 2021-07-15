@@ -390,8 +390,9 @@ height:auto;
 }
 .projectlayerdata{
  position:absolute;
+ top:50%;
+ margin-left:3%;
  left:0;
- vertical-align:middle;
 }
 .bo{
  background:black;
