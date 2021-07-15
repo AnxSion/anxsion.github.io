@@ -389,13 +389,14 @@ width:100%;
 height:auto;
 }
 .projectlayerdata{
+ font-size:14px;
  position:absolute;
  top:50%;
- margin-left:3%;
+ margin-left:6%;
  left:0;
 }
 .bo{
- background:black;
+ background:white;
  height:1.2em;
  user-select:none;
  -webkit-user-select: none;
