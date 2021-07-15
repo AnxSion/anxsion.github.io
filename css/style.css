@@ -276,7 +276,6 @@ width:95%;
 width:45%;
 }
 }
-
 .storeback{
 padding: 5px;
 height: auto;
@@ -358,8 +357,8 @@ font-size: 18px;
 background: white;
 }
 .projectpageTitle{
- background-color:red;
- color:black;
+ background-color:black;
+ color:white;
 }
 .projectcontainer{
  width:94%;
